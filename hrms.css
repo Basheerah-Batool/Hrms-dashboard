@@ -113,7 +113,7 @@ body{
     border-radius:6px;
 }
 
-/* MAIN */
+
 
 .main{
     padding:25px;
@@ -279,7 +279,7 @@ tbody tr:nth-child(even){
     }
 }
 
-/* MOBILE */
+
 
 @media(max-width:767px){
 
