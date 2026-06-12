@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HRMS</title>
+<title>HRMS Dashboard</title>
 <link rel="stylesheet" href="Hrms.css">
 </head>
 
 <body>
 
 <div class="head">
-    <header class="header">
+
+       <header class="header">
 
         <div class="header-left">
-            <button class="hamburger">☰</button>
+            <label for="menu-toggle" class="hamburger">☰</label>
             <h1>CRUD Operations — HRMS</h1>
         </div>
 
@@ -23,32 +24,41 @@
 
     </header>
 
+  
+    <input type="checkbox" id="menu-toggle">
 
+  
     <aside class="navibar">
 
         <h3>MENU</h3>
 
-        <a href="#" class="menu active">
-            <span class="icon"></span>Dashboard</a>
+        <a href="#" class="menu menu-active">
+            <span class="icon"></span> Dashboard
+        </a>
 
         <a href="#" class="menu">
-            <span class="icon"></span>Employees</a>
+            <span class="icon"></span> Employees
+        </a>
 
         <a href="#" class="menu">
-            <span class="icon"></span>Leave</a>
+            <span class="icon"></span> Leave
+        </a>
 
         <a href="#" class="menu">
-            <span class="icon"></span>Payroll</a>
+            <span class="icon"></span> Payroll
+        </a>
 
         <a href="#" class="menu">
-            <span class="icon"></span>Settings</a>
+            <span class="icon"></span> Settings
+        </a>
 
     </aside>
 
-
+  
     <main class="main">
 
-        <h2 class="dbinfo">Dashboard Overview</h2>
+        <h2 class="section-heading">Dashboard Overview</h2>
+
         <div class="stats">
 
             <div class="stat-card">
@@ -73,13 +83,12 @@
 
         </div>
 
-
-        <h2 class="empinfo">Employee Cards</h2>
+        <h2 class="section-heading">Employee Cards</h2>
 
         <div class="employees">
 
             <div class="employee-card">
-                <span class="statusdotac"></span>
+                <span class="status-active"></span>
                 <div class="emp-logo">RK</div>
                 <h3>Ravi Kumar</h3>
                 <p>Engineering</p>
@@ -87,7 +96,7 @@
             </div>
 
             <div class="employee-card">
-                <span class="status"></span>
+                <span class="status-active"></span>
                 <div class="emp-logo">PS</div>
                 <h3>Priya Sharma</h3>
                 <p>Design</p>
@@ -95,7 +104,7 @@
             </div>
 
             <div class="employee-card">
-                <span class="statusdotic"></span>
+                <span class="status-inactive"></span>
                 <div class="emp-logo">AN</div>
                 <h3>Anitha Nair</h3>
                 <p>HR</p>
@@ -104,8 +113,7 @@
 
         </div>
 
-
-        <h2 class="emptable">Salary Table</h2>
+        <h2 class="section-heading">Salary Table</h2>
 
         <div class="tableinfo">
 
@@ -128,7 +136,7 @@
                         <td>Engineering</td>
                         <td>Rs.55,000</td>
                         <td>3 yrs</td>
-                        <td><span class="active">Active</span></td>
+                        <td><span class="badge-active">Active</span></td>
                     </tr>
 
                     <tr>
@@ -136,7 +144,7 @@
                         <td>Design</td>
                         <td>Rs.48,000</td>
                         <td>2 yrs</td>
-                        <td><span class="active">Active</span></td>
+                        <td><span class="badge-active">Active</span></td>
                     </tr>
 
                     <tr>
@@ -144,7 +152,7 @@
                         <td>Engineering</td>
                         <td>Rs.62,000</td>
                         <td>5 yrs</td>
-                        <td><span class="active">Active</span></td>
+                        <td><span class="badge-active">Active</span></td>
                     </tr>
 
                     <tr>
@@ -152,7 +160,7 @@
                         <td>HR</td>
                         <td>Rs.42,000</td>
                         <td>4 yrs</td>
-                        <td><span class="inactive">Inactive</span></td>
+                        <td><span class="badge-inactive">Inactive</span></td>
                     </tr>
 
                     <tr>
@@ -160,7 +168,7 @@
                         <td>Design</td>
                         <td>Rs.52,000</td>
                         <td>6 yrs</td>
-                        <td><span class="inactive">Inactive</span></td>
+                        <td><span class="badge-inactive">Inactive</span></td>
                     </tr>
 
                     <tr>
@@ -168,22 +176,7 @@
                         <td>Engineering</td>
                         <td>Rs.71,000</td>
                         <td>8 yrs</td>
-                        <td><span class="active">Active</span></td>
-                   </tr>
-
-                     <tr>
-                        <td>Lakshmi Devi</td>
-                        <td>Design</td>
-                        <td>Rs.38,000</td>
-                        <td>1 yrs</td>
-                        <td><span class="inactive">Inctive</span></td>
-                    </tr>
-                     <tr>
-                        <td>Arjun Menon</td>
-                        <td>Engineering</td>
-                        <td>Rs.42,000</td>
-                        <td>4yrs</td>
-                        <td><span class="inactive">Active</span></td>
+                        <td><span class="badge-active">Active</span></td>
                     </tr>
 
                 </tbody>
